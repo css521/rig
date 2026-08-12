@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [0.42.0](https://github.com/0xPlaygrounds/rig/compare/rig-core-v0.41.0...rig-core-v0.42.0) - 2026-08-12
+
+### Fixed
+
+- *(gemini)* send temperature and max_tokens; add live regression cassettes and a cache-prefix guard ([#2283](https://github.com/0xPlaygrounds/rig/pull/2283)) (by [gold-silver-copper](https://github.com/gold-silver-copper))
+- *(anthropic)* prefer `message_delta` usage.input_tokens when the provider sends it there ([#2279](https://github.com/0xPlaygrounds/rig/pull/2279)) (by [gold-silver-copper](https://github.com/gold-silver-copper))
+- *(release)* isolate macro hygiene fixture ([#2227](https://github.com/0xPlaygrounds/rig/pull/2227)) (by [gold-silver-copper](https://github.com/gold-silver-copper))
+
+### Other
+
+- Consolidate provider and agent boilerplate ([#2285](https://github.com/0xPlaygrounds/rig/pull/2285)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2285
+- consolidate provider plumbing and agent boilerplate (−365 production LOC, 5 defect fixes) ([#2286](https://github.com/0xPlaygrounds/rig/pull/2286)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2286
+- [**breaking**] assistant content is tagged and provider extras are a named field ([#2277](https://github.com/0xPlaygrounds/rig/pull/2277)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2277
+- post-Vec-migration precision and the pre-Vec serde accommodations go ([#2276](https://github.com/0xPlaygrounds/rig/pull/2276)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2276
+- [**breaking**] `OneOrMany<T>` becomes `Vec<T>` — the fake is deleted, the enforcement moves ([#2273](https://github.com/0xPlaygrounds/rig/pull/2273)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2273
+- Tool identity holds at every boundary: legacy lift, honest constructors, and the drains the siblings already had (2262 round-7 follow-up) ([#2267](https://github.com/0xPlaygrounds/rig/pull/2267)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2267
+- Stream parts become entities: lifecycle grammar, opaque keys, and tool names as data (the 84a43e9e C→B→A program) ([#2262](https://github.com/0xPlaygrounds/rig/pull/2262)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2262
+- Canonical stream grammar: mandatory identity, one accumulator, decode-then-validate, and a wire-conformance corpus ([#2258](https://github.com/0xPlaygrounds/rig/pull/2258)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2258
+- Normalize completion responses at the provider boundary and erase the model type at agent construction ([#2257](https://github.com/0xPlaygrounds/rig/pull/2257)) (by [gold-silver-copper](https://github.com/gold-silver-copper)) - #2257
+
+### Contributors
+
+* [gold-silver-copper](https://github.com/gold-silver-copper)
 
 ### Changed
 
